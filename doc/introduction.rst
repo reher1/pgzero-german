@@ -1,33 +1,37 @@
-Introduction to Pygame Zero
+Einführung zu Pygame Zero
 ===========================
 
 .. highlight:: python
     :linenothreshold: 5
 
-Creating a window
+Ein Fenster erzeugen
 -----------------
 
-First, create an empty file called ``intro.py``.
+Erzeuge als erstes eine leere Datei mit dem Namen ``intro.py``.
 
-Verify that this runs and creates a blank window by running ::
+Stelle durch den Befehl ::
 
     pgzrun intro.py
 
-Everything in Pygame Zero is optional; a blank file is a valid Pygame Zero
-script!
+sicher, dass es ausgeführt wird und ein leeres Fenster erzeugt.
 
-You can quit the game by clicking on the window's close button or by pressing
-``Ctrl-Q`` (``⌘-Q`` on Mac). If the game stops responding for any reason, you
-may need to terminate it by pressing ``Ctrl-C`` in your Terminal window.
+In Pygame Zero ist alles optional. Eine leere Datei ist ein korrektes Pygame Zero programm!
+
+Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des 
+Fensters clickst oder durch drücken von 
+``Ctrl-Q`` (``⌘-Q`` beim Mac). Wenn das Spiel aus welchen Gründen auch immer
+nicht mehr reagiert, kann es sein, dass du es durch drücken von ``Ctrl-C`` im
+Terminal-Fenster beenden musst.
 
 
-Drawing a background
+Einen Hintergrund malen
 --------------------
 
-Next, let's add a :func:`draw` function and set window dimensions. Pygame Zero
-will call this function whenever it needs to paint the screen.
+Als nächstes wollen wir ein Funktion :func:`draw` hinzufügen und die
+Fenstergröße setzen. Pygame Zero ruft diese Funktion immer dann auf, wenn es
+den Bildschirm neu zeichnen muss.
 
-In ``intro.py``, add the following::
+Füge das folgende in ``intro.py`` hinzu::
 
     WIDTH = 300
     HEIGHT = 300

@@ -57,7 +57,7 @@ Stickers by |Sticker Mule|
     :height: 40
     :target: https://www.stickermule.com/supports/opensource
 
-`Sticker Mule`_ haben sich großzügigerweise bereiterklärt, Pygame Zero Laptop Sticker für Lernende zur
+`Sticker Mule`_ haben sich großzügigerweise bereiterklärt, Pygame Zero Laptop-Sticker für Lernende zur
 Verfügung zu stellen.
 
 .. _`Sticker Mule`: https://www.stickermule.com/supports/opensource
