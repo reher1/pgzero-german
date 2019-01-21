@@ -5,7 +5,7 @@ Einführung zu Pygame Zero
     :linenothreshold: 5
 
 Ein Fenster erzeugen
------------------
+--------------------
 
 Erzeuge als erstes eine leere Datei mit dem Namen ``intro.py``.
 
@@ -15,7 +15,8 @@ Stelle durch den Befehl ::
 
 sicher, dass es ausgeführt wird und ein leeres Fenster erzeugt.
 
-In Pygame Zero ist alles optional. Eine leere Datei ist ein korrektes Pygame Zero programm!
+In Pygame Zero ist alles optional. Eine leere Datei ist ein korrektes Pygame
+Zero programm!
 
 Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des 
 Fensters clickst oder durch drücken von 
@@ -25,7 +26,7 @@ Terminal-Fenster beenden musst.
 
 
 Einen Hintergrund malen
---------------------
+-----------------------
 
 Als nächstes wollen wir ein Funktion :func:`draw` hinzufügen und die
 Fenstergröße setzen. Pygame Zero ruft diese Funktion immer dann auf, wenn es
@@ -39,38 +40,42 @@ Füge das folgende in ``intro.py`` hinzu::
     def draw():
         screen.fill((128, 0, 0))
 
-Re-run ``pgzrun intro.py`` and the screen should now be a reddish square!
+Führe ``pgzrun intro.py`` erneut aus. Der Bildschirm sollte jetzt ein rötliches
+Quadrat zeigen!
 
-What is this code doing?
+Was macht dieser Code?
 
-``WIDTH`` and ``HEIGHT`` control the width and height of your window. The code
-sets the window size to be 300 pixels in each dimension.
+``WIDTH`` und ``HEIGHT`` bestimmen die Breite und Höhe deines Fensters. Der Code
+setzt die Größe des Fensters auf 300 Pixel in jede Richtung.
 
-``screen`` is a built-in that represents the window display. It has a
-:ref:`range of methods for drawing sprites and shapes <screen>`. The
-``screen.fill()`` method call is filling the screen with a solid colour,
-specified as a ``(red, green, blue)`` colour tuple. ``(128, 0, 0)`` will be a
-medium-dark red. Try changing these values with numbers between 0 and 255
-and see what colors you can create.
+``screen`` ist ein vorgegebenes Objekt, dass das angezeigte Fenster
+representiert. Es hat eine 
+:ref:`Reihe an Methoden zum malen von Sprites und Formen <screen>`. Die 
+``screen.fill()`` Methode befüllt den Bildschirm einfarbig,
+definiert mit dem Farbtupel ``(rot, grün, blau)``. ``(128, 0, 0)`` wird zu einem
+mittleren Rot-Ton. Ändere die Werte mit Zahlen zwischen 0 und 255 und schaue,
+welche Farben du erzeugen kannst.
 
-Let's set up a sprite that we can animate.
+Jetzt werden wir eine Figur (Sprite) aufsetzten, die wir animieren können.
 
+Eine Figur (Sprite) zeichnen
+----------------------------
 
-Draw a sprite
--------------
-
-Before we can draw anything, we'll need to save an alien sprite to use. You can
-right click on this one and save it ("Save Image As..." or similar).
+Bevor wir etwas zeichnen können, müssen wir eine Ausserirdischen-Figur
+speichern. Du kannst hierauf mit der rechten Maustaste klicken und es speichern
+("Bild speichern unter..." oder so ähnlich).
 
 .. image:: _static/alien.png
 
-(This sprite has a transparency (or "alpha") channel, which is great for games!
-But it's designed for a dark background, so you may not be able to see the
-alien's space helmet until it is shown in the game).
+(Diese Figur hat einen Transparenz- (oder "alpha-") Kanal, der für Spiele
+großartig ist!
+Allerdings ist sie für einen dunklen Hintergrund gezeichnet worden. Es kann also
+sein, dass du den Helm des Ausserirdischen erst siehst, wenn er im Spiel
+dargestellt wird.)
 
-.. tip::
+.. Tipp::
 
-    You can find lots of free sprites, including this one, on `kenney.nl
+    Du findest viele kostenlose Sprites, einschließlich diesem auf `kenney.nl
     <https://kenney.nl/assets?q=2d>`_. This one comes from the
     `Platformer Art Deluxe pack
     <https://kenney.nl/assets/platformer-art-deluxe>`_.
