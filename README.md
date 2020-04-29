@@ -1,1 +1,1 @@
-# WIP pgzero-german
+# pgzero-german
