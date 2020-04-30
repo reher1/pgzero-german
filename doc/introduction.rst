@@ -13,7 +13,7 @@ Stelle durch den Befehl ::
 
     pgzrun intro.py
 
-sicher, dass es ausgeführt wird und ein leeres Fenster erzeugt.
+sicher, dass das Programm ausgeführt wird und ein leeres Fenster erzeugt.
 
 Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des 
 Fensters klickst oder durch drücken von 
