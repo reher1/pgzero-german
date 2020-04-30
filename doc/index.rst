@@ -67,7 +67,7 @@ Verfügung.
     stickers
 
 
-Pygame unterstützen 
+Ihr wollt Pygame Zero unterstützen? 
 ---------------------
 
 .. toctree::
