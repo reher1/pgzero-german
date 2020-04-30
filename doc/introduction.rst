@@ -24,14 +24,12 @@ Fensters klickst oder durch drücken von
 Terminal-Fenster beenden musst.
 
 
-Einen Hintergrund malen
+Einen Hintergrund zeichnen
 -----------------------
 
-Als nächstes wollen wir ein Funktion :func:`draw` hinzufügen und die
-Fenstergröße setzen. Pygame Zero ruft diese Funktion immer dann auf, wenn es
-den Bildschirm neu zeichnen muss.
-
-Füge das folgende in ``intro.py`` hinzu::
+Als nächstes wollen wir die Funktion :func:`draw` hinzufügen und die
+Fenstergröße setzen. Pygame Zero ruft diese Funktion immer dann auf, wenn der Bildschirm neu gezeichnet werden muss.
+Füge folgenden Code in ``intro.py`` hinzu::
 
     WIDTH = 300
     HEIGHT = 300
@@ -39,10 +37,10 @@ Füge das folgende in ``intro.py`` hinzu::
     def draw():
         screen.fill((128, 0, 0))
 
-Führe ``pgzrun intro.py`` erneut aus. Der Bildschirm sollte jetzt ein rötliches
+Führe ``pgzrun intro.py`` erneut aus. Der Bildschirm sollte jetzt ein rotes
 Quadrat zeigen!
 
-Was macht dieser Code?
+Was tut dieser Code?
 
 ``WIDTH`` und ``HEIGHT`` bestimmen die Breite und Höhe deines Fensters. Der Code
 setzt die Größe des Fensters auf 300 Pixel in jede Richtung.
@@ -60,31 +58,30 @@ Jetzt werden wir eine Figur (Sprite) aufsetzten, die wir animieren können.
 Eine Figur (Sprite) zeichnen
 ----------------------------
 
-Bevor wir etwas zeichnen können, müssen wir eine Ausserirdischen-Figur
-speichern. Du kannst hierauf mit der rechten Maustaste klicken und es speichern
-("Bild speichern unter..." oder so ähnlich).
+Bevor wir etwas zeichnen können, müssen wir eine Alien-Figur
+speichern. Du kannst hier mit der rechten Maustaste klicken und es speichern
+("Bild speichern unter...").
 
 .. image:: _static/alien.png
 
 (Diese Figur hat einen Transparenz- (oder "alpha-") Kanal, der für Spiele
 großartig ist!
 Allerdings ist sie für einen dunklen Hintergrund gezeichnet worden. Es kann also
-sein, dass du den Helm des Ausserirdischen erst siehst, wenn er im Spiel
+sein, dass du den Helm des Aliens erst siehst, wenn er im Spiel
 dargestellt wird.)
 
 .. Tipp::
 
     Du findest viele kostenlose Sprites, einschließlich diesem auf `kenney.nl
-    <https://kenney.nl/assets?q=2d>`_. This one comes from the
+    <https://kenney.nl/assets?q=2d>`_. Das Alien-Bild stammt aus
     `Platformer Art Deluxe pack
     <https://kenney.nl/assets/platformer-art-deluxe>`_.
 
-You need to save the file in the right place so that Pygame Zero can find it.
-Create a directory called ``images`` and save the image into it as
-``alien.png``. Both of those must be lower case. Pygame Zero will complain
-otherwise, to alert you to a potential cross-platform compatibility pitfall.
+Du musst die Datei am richten Ort ablegen.
+Erstelle ein Verzeichnis namens ``images`` und speichere das Bild dort unter
+``alien.png``. (alles kleingeschrieben!)
 
-If you've done that, your project should look like this:
+Wenn du das erledigt hast, sollte dein Projektverzeichnis so aussehen:
 
 .. code-block:: none
 
@@ -93,13 +90,12 @@ If you've done that, your project should look like this:
     │   └── alien.png
     └── intro.py
 
-``images/`` is the standard directory that Pygame Zero will look in to find
-your images.
+``images/`` ist das Standardverzeichnis, in dem Pygame Zero Bilder sucht.
 
-There's a built-in class called :class:`Actor` that you can use to represent a
-graphic to be drawn to the screen.
+In Pygame Zero gibt es ein Klasse namens :class:`Actor` das benutzt werden kann,
+um Bilder auf dem Bildschrimm zu zeichnen.
 
-Let's define one now. Change the ``intro.py`` file to read::
+Ändere die Datei ``intro.py`` wie folgt ab::
 
     alien = Actor('alien')
     alien.pos = 100, 56
@@ -111,19 +107,18 @@ Let's define one now. Change the ``intro.py`` file to read::
         screen.clear()
         alien.draw()
 
-Your alien should now be appearing on screen! By passing the string ``'alien'``
-to the ``Actor`` class, it automatically loads the sprite, and has attributes
-like positioning and dimensions. This allows us to set the ``HEIGHT`` of
-the window based on the height of the alien.
+Auf dem Bildschrim sollte jetzt ein Alien erscheinen! Durch die Angabe des Strings ``'alien'``
+in der ``Actor`` Klasse, lädt Pygame Zero automatisch das entsprechende Bild
+(inkl. der Attribute wie Position, etc.). So können wir beispielsweise die Höhe des Fensters
+entsprechend der Höhe des Alien-Sprites setzen.
 
-The ``alien.draw()`` method draws the sprite to the screen at its current
-position.
+Die Methode ``alien.draw()`` zeichnet das Alien an seiner aktuellen Position auf den Bildschirm.
 
 
-Moving the alien
+Figuren bewegen
 ----------------
 
-Let's set the alien off-screen; change the ``alien.pos`` line to read::
+Wir wollen das Alien in die rechte obere Ecke des Bildschirrm setzen; dazu ändern wir den Code wie folgt::
 
     alien.topright = 0, 10
 
@@ -137,14 +132,12 @@ code to the bottom of the file::
         if alien.left > WIDTH:
             alien.right = 0
 
-Pygame Zero will call your :func:`update` function once every frame. Moving the
-alien a small number of pixels every frame will cause it to slide across the
-screen. Once it slides off the right-hand side of the screen, we reset it back
-to the left.
+Pygame Zero ruft die Funktion :func:`update` automatisch in jedem Frame auf. Indem wir das Alien
+in jedem Frame etwas verschieben, sieht es so aus, als ob sich das Alien bewegt. Wenn es links aus dem Bildschirm läuft,
+erscheint es wieder von rechts.
 
-Your functions ``draw()`` and ``update()`` work in similar ways but are designed for two different purposes.
-The ``draw()`` function draws the current position of the alien while the ``update()`` function is used to show the alien
-moving on the screen.
+Die Funktionen ``draw()`` und ``update()`` arbeiten in ähnlicher Art und Weise, sind aber für unterschiedliche Zwecke gedacht.
+DIe ``draw()`` Funktion zeichnet das Alien an seiner aktuellen Position. Die Funktion``update()`` wird benutzt, um das Alien zu bewegen.
 
 
 Handling clicks
