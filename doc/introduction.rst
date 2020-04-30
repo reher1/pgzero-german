@@ -233,8 +233,6 @@ Probier es aus!
 Zusammenfassung
 -------
 
-We've seen how to load and draw sprites, play sounds, handle input events, and
-use the built-in clock.
 Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspiel, Tastatureingaben verarbeiten und die eingebaute Uhr benutzt.
 
 Ihr wollt euer Spiel noch weiterentwickeln?
