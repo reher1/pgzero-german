@@ -136,9 +136,9 @@ Die Funktionen ``draw()`` und ``update()`` arbeiten in ähnlicher Art und Weise,
 DIe ``draw()`` Funktion zeichnet das Alien an seiner aktuellen Position. Die Funktion ``update()`` wird benutzt, um das Alien zu bewegen.
 
 
-Tastatureingaben verarbeiten
+Tastatur- und Mauseingaben verarbeiten
 ---------------
-Nun wollen wir auf Tastatureingaben reagieren. Dazu müssen wir die Funktion :func:`on_mouse_down` implementieren. Füge folgenden Code hinzu::
+Nun wollen wir auf Tastatur- und Mauseingaben reagieren. Dazu müssen wir die Funktion :func:`on_mouse_down` implementieren. Füge folgenden Code hinzu::
 
     def on_mouse_down(pos):
         if alien.collidepoint(pos):
@@ -146,7 +146,7 @@ Nun wollen wir auf Tastatureingaben reagieren. Dazu müssen wir die Funktion :fu
         else:
             print("You missed me!")
 
-Starte das Spiel und versuche auf das Alien zu klicken.
+Starte das Spiel und versuche auf das Alien (mit der linken Maustaste) zu klicken.
 
 Alternativ hätte man auch folgendes schreiben können::
 
@@ -159,12 +159,12 @@ or::
         if button == mouse.LEFT and alien.collidepoint(pos):
             print("Eek!")
 
-Pygame Zero reagiert intelligent auf die Tastatureingaben und kann auch ohne den Parameter ``pos`` aufgerufen werden.
+Pygame Zero reagiert intelligent auf die Tastatur- und Mauseingaben und die Funktion kann auch ohne den Parameter ``pos`` aufgerufen werden.
 
 Musik und Bilder hinzufügen
 -----------------
 
-Wenn wir auf das Alien klicken, soll es verletzt sein. Speichere die folgenden Dateien:
+Wenn wir auf das Alien klicken, soll es verletzt sein. Dazu wollen wir das Bild des Alien-Sprites ändern. Speichere die folgenden Dateien:
 
 * `alien_hurt.png <_static/alien_hurt.png>`_ - speichere die Datei ``alien_hurt.png``
   in das Verzeichnis ``images`` .
@@ -200,10 +200,9 @@ Das Alien wechselt nicht mehr zurück zu seinem alten Bild. Das wollen wir als n
 Die Uhr benutzen
 -----
 
-Pygame Zero hat eine voregebene Klasse :class:`Clock`, die dafür sorgen kann, dass Funktionen später ausgeführt werden.
+Pygame Zero hat eine eingebaute Klasse :class:`Clock`, die dafür sorgt, dass Funktionen später ausgeführt werden.
 
-Zuerst wollen wir kurz unseren Code "refactorn" (ie. den Code reorganisieren). Wir können Funktionen schreiben, 
-um den Alien verletzt bzw. normal zu setzen::
+Zuerst wollen wir ein kurzes ``Refactoring`` (d.h. wir reorganisieren unseren Code, um ihr lesbarer zu machen). Wir können Funktionen schreiben, um den Alien verletzt bzw. normal zu setzen::
 
     def on_mouse_down(pos):
         if alien.collidepoint(pos):
@@ -218,14 +217,14 @@ um den Alien verletzt bzw. normal zu setzen::
     def set_alien_normal():
         alien.image = 'alien'
 
-Das ändert an unserem Code noch nichts. ``set_alien_normal()`` wird noch nicht aufgerufen. Wir wollen die beiden Funktionen nutzen, damit das Alien nach einem kurzen Augenblick wieder in den normalen Zustand zurück gesetzt wird.::
+Das ändert an unserem Programm noch nichts, da ``set_alien_normal()`` noch nicht aufgerufen wird. Wir wollen die beiden Funktionen nutzen, damit das Alien nach einem kurzen Augenblick wieder in den normalen Zustand zurück gesetzt wird.::
 
     def set_alien_hurt():
         alien.image = 'alien_hurt'
         sounds.eep.play()
         clock.schedule_unique(set_alien_normal, 0.5)
 
-``clock.schedule_unique()`` ruft ``set_alien_normal()``  ``0.5`` Sekunden später auf. ``schedule_unique()`` sorgt auch dafür, dass das nicht mehrfach geschieht, z.B. wenn du mehrfach auf das Alien klickst.
+``clock.schedule_unique()`` ruft ``set_alien_normal()`` ca. ``0.5`` Sekunden später auf. ``schedule_unique()`` sorgt auch dafür, dass das nicht mehrfach geschieht, z.B. wenn du mehrfach auf das Alien klickst.
 
 Probier es aus!
 
@@ -233,7 +232,7 @@ Probier es aus!
 Zusammenfassung
 -------
 
-Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspiel, Tastatureingaben verarbeiten und die eingebaute Uhr benutzt.
+Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspiel, Tastatureingaben verarbeiten und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero!
 
 Ihr wollt euer Spiel noch weiterentwickeln?
 
