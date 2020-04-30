@@ -15,9 +15,6 @@ Stelle durch den Befehl ::
 
 sicher, dass es ausgeführt wird und ein leeres Fenster erzeugt.
 
-In Pygame Zero ist alles optional. Eine leere Datei ist ein korrektes Pygame
-Zero Programm!
-
 Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des 
 Fensters klickst oder durch drücken von 
 ``Ctrl-Q`` (``⌘-Q`` beim Mac). Wenn das Spiel aus nicht mehr reagiert, kann es sein, dass du es durch drücken von ``Ctrl-C`` im
