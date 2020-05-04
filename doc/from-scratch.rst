@@ -1,4 +1,4 @@
-Migrating from Scratch
+Von Scratch zu Pygame Zero
 ======================
 
 This tutorial will compare an implementation of Flappy Bird written in Scratch
