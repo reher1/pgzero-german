@@ -50,13 +50,13 @@ definiert mit dem Farbtupel ``(rot, grün, blau)``. ``(128, 0, 0)`` wird zu eine
 mittleren Rot-Ton. Ändere die Werte mit Zahlen zwischen 0 und 255 und schaue,
 welche Farben du erzeugen kannst.
 
-Jetzt werden wir eine Figur (Sprite) aufsetzten, die wir animieren können.
+Jetzt werden wir eine Figur (Sprite) aufsetzen, die wir animieren können.
 
 Eine Figur (Sprite) zeichnen
 ----------------------------
 
-Bevor wir etwas zeichnen können, müssen wir eine Alien-Figur
-speichern. Du kannst hier mit der rechten Maustaste klicken und es speichern
+Bevor wir eine Figur (ein Alien) zeichnen können, müssen wir diese Alien-Figur
+speichern. Du kannst hier mit der rechten Maustaste klicken und das Bild speichern
 ("Bild speichern unter...").
 
 .. image:: _static/alien.png
@@ -89,8 +89,8 @@ Wenn du das erledigt hast, sollte dein Projektverzeichnis so aussehen:
 
 ``images/`` ist das Standardverzeichnis, in dem Pygame Zero Bilder sucht.
 
-In Pygame Zero gibt es ein Klasse namens :class:`Actor` das benutzt werden kann,
-um Bilder auf dem Bildschrimm zu zeichnen.
+In Pygame Zero gibt es ein Klasse namens :class:`Actor`, die benutzt werden kann,
+um Sprites auf dem Bildschrimm zu zeichnen.
 
 Ändere die Datei ``intro.py`` wie folgt ab::
 
@@ -114,14 +114,14 @@ Die Funktion ``alien.draw()`` zeichnet das Alien an seiner aktuellen Position au
 Figuren bewegen
 ----------------
 
-Wir wollen das Alien in die rechte obere Ecke des Bildschirrm setzen; dazu ändern wir den Code wie folgt::
+Wir wollen das Alien in die rechte obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt::
 
-    alien.topright = 0, 10
+    alien.x = 10
+    alien.y = 10
 
-Note how you can assign to ``topright`` to move the alien actor by its
-top-right corner. If the right-hand edge of the alien is at ``0``, the the
-alien is just offscreen to the left.  Now let's make it move. Add the following
-code to the bottom of the file::
+Mithilfe der x- und y-Koordinate können wir das Alien an eine beliege Position setzen.
+Hier setzen wir die Figur in die linke obere Ecke. 
+Jetzt wollen wir das Alien bewegen; dazu ändern wir den Code wie folgt::
 
     def update():
         alien.left += 2
@@ -133,7 +133,7 @@ in jedem Frame etwas verschieben, sieht es so aus, als ob sich das Alien bewegt.
 erscheint es wieder von rechts.
 
 Die Funktionen ``draw()`` und ``update()`` arbeiten in ähnlicher Art und Weise, sind aber für unterschiedliche Zwecke gedacht.
-DIe ``draw()`` Funktion zeichnet das Alien an seiner aktuellen Position. Die Funktion ``update()`` wird benutzt, um das Alien zu bewegen.
+DIe ``draw()`` Funktion zeichnet das Alien an seiner aktuellen Position. Die Funktion ``update()`` wird benutzt, um das Alien zu bewegen. 
 
 
 Tastatur- und Mauseingaben verarbeiten
@@ -147,19 +147,6 @@ Nun wollen wir auf Tastatur- und Mauseingaben reagieren. Dazu müssen wir die Fu
             print("You missed me!")
 
 Starte das Spiel und versuche auf das Alien (mit der linken Maustaste) zu klicken.
-
-Alternativ hätte man auch folgendes schreiben können::
-
-    def on_mouse_down():
-        print("You clicked!")
-
-or::
-
-    def on_mouse_down(pos, button):
-        if button == mouse.LEFT and alien.collidepoint(pos):
-            print("Eek!")
-
-Pygame Zero reagiert intelligent auf die Tastatur- und Mauseingaben und die Funktion kann auch ohne den Parameter ``pos`` aufgerufen werden.
 
 Musik und Bilder hinzufügen
 -----------------
@@ -202,7 +189,7 @@ Die Uhr benutzen
 
 Pygame Zero hat eine eingebaute Klasse :class:`Clock`, die dafür sorgt, dass Funktionen später ausgeführt werden.
 
-Zuerst wollen wir ein kurzes ``Refactoring`` (d.h. wir reorganisieren unseren Code, um ihr lesbarer zu machen). Wir können Funktionen schreiben, um den Alien verletzt bzw. normal zu setzen::
+Zuerst wollen wir ein kurzes ``Refactoring`` (d.h. wir reorganisieren unseren Code, um ihn lesbarer zu machen). Wir können Funktionen schreiben, um den Alien verletzt bzw. normal zu setzen::
 
     def on_mouse_down(pos):
         if alien.collidepoint(pos):
@@ -232,7 +219,7 @@ Probier es aus!
 Zusammenfassung
 -------
 
-Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspiel, Tastatureingaben verarbeiten und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero!
+Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Maus- und Tastatureingaben verarbeitt und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwieirig oder? 
 
 Ihr wollt euer Spiel noch weiterentwickeln?
 
