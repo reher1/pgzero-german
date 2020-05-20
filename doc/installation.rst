@@ -29,6 +29,11 @@ Bei der Fehlermedlung ``sudo: pip: command not found`` kann folgender Befehl hil
 
     sudo pip3 install pgzero
 
+Beispiel: Installation in Thonny 
+''''''''''''''''''''''''''''''''
+
+.. image:: _static/
+
 Pygame Zero in IDLE, Mu, Thonny und anderen IDEs
 ----------------
 
@@ -70,3 +75,9 @@ Beispiel
     pgzrun.go()
 
 Dieser Code kann einfach in eine beliebige IDE kopiert werden.
+
+Beispiel in Thonny
+''''''''''''''''''
+
+.. image:: _static/
+
