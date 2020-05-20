@@ -78,7 +78,9 @@ Dieser Code kann einfach in eine beliebige IDE kopiert werden.
 
 Beliebte IDEs für Anfänger sind (neben der Standard-IDE **IDLE**) **Mu** und **Thonny**:
 
+* **Mu**: `mu <https://codewith.mu/>`
 
+* **Thonny**: `thonny <https://thonny.org/>` 
 
 Beispiel in Thonny
 ''''''''''''''''''
