@@ -32,7 +32,7 @@ Bei der Fehlermedlung ``sudo: pip: command not found`` kann folgender Befehl hil
 Beispiel: Installation in Thonny 
 ''''''''''''''''''''''''''''''''
 
-.. image:: _static/
+.. image:: _static/thonny_pgzero_install.jpg
 
 Pygame Zero in IDLE, Mu, Thonny und anderen IDEs
 ----------------
@@ -85,5 +85,5 @@ Beliebte IDEs für Anfänger sind (neben der Standard-IDE **IDLE**) **Mu** und *
 Beispiel in Thonny
 ''''''''''''''''''
 
-.. image:: _static/
+.. image:: _static/thonny_pgzero_example.jpg
 
