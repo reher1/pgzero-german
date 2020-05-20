@@ -8,7 +8,8 @@ Die Installation von **Python 3** ist Vorraussetzung für die Installation von P
 Bei **Linux** oder **Raspberry Pi** ist dies bereits vorinstalliert. Für andere Betriebssysteme 
 kann Python 3 unter `<https://www.python.org/>` heruntergeladen werden.
 
-Generell empfiehlt sich die Installation mithilfe von Pythons Paketverwaltungsprogramm **pip**.
+Generell empfiehlt sich die Installation mithilfe von Pythons Paketverwaltungsprogramm **pip**. 
+Einige IDEs (gerade für Anfänger) bieten bereits einfache grafische Oberflächen zur Installation von neuen Paketen (s. Thonny unten).
 
 Windows and Mac
 '''''''''''''''
