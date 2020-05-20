@@ -31,3 +31,18 @@ Bei der Fehlermedlung ``sudo: pip: command not found`` kann folgender Befehl hil
 
 Pygame Zero in IDLE, Mu, Thonny und anderen IDEs
 ----------------
+
+Um Pygame Zero in einem Python Programm zu verwenden, muss folgender Code eingefügt werden:
+
+In der ersten Zeile:
+
+::
+
+    import pgzrun
+
+In der letzten Zeile:
+
+
+::
+
+    pgzrun.go()
