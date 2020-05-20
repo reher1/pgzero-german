@@ -35,7 +35,7 @@ Benutzerhandbuch & Hilfe (auf Englisch)
     hooks
     builtins
 
-Benutzerhandbuch
+Pygame Zero installieren
 ----------
 
 .. toctree::
