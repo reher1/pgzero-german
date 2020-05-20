@@ -17,7 +17,7 @@ sicher, dass das Programm ausgeführt wird und ein leeres Fenster erzeugt.
 
 Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des 
 Fensters klickst oder durch drücken von 
-``Ctrl-Q`` (``⌘-Q`` beim Mac). Wenn das Spiel aus nicht mehr reagiert, kann es sein, dass du es durch drücken von ``Ctrl-C`` im
+``Ctrl-Q`` (``⌘-Q`` beim Mac). Wenn das Spiel nicht mehr reagiert, kann es sein, dass du es durch drücken von ``Ctrl-C`` im
 Terminal-Fenster beenden musst.
 
 
@@ -40,17 +40,17 @@ Quadrat zeigen!
 Was tut dieser Code?
 
 ``WIDTH`` und ``HEIGHT`` bestimmen die Breite und Höhe deines Fensters. Der Code
-setzt die Größe des Fensters auf 300 Pixel in jede Richtung.
+setzt die Größe des Fensters auf 300 Pixel für beide Dimensionen.
 
 ``screen`` ist ein vorgegebenes Objekt, dass das angezeigte Fenster
-representiert. Es hat eine 
-:ref:`Reihe an Methoden zum malen von Sprites und Formen <screen>`. Die 
-``screen.fill()`` Methode befüllt den Bildschirm einfarbig,
-definiert mit dem Farbtupel ``(rot, grün, blau)``. ``(128, 0, 0)`` wird zu einem
+repräsentiert. Es hat eine 
+:ref:`Reihe an Methoden zum malen von Sprites und Formen <screen>`. Die Methode
+``screen.fill()`` befüllt den Bildschirm einfarbig,
+in der Farbe mit dem Farbtupel ``(rot, grün, blau)``. ``(128, 0, 0)`` wird zu einem
 mittleren Rot-Ton. Ändere die Werte mit Zahlen zwischen 0 und 255 und schaue,
 welche Farben du erzeugen kannst.
 
-Jetzt werden wir eine Figur (Sprite) aufsetzen, die wir animieren können.
+Jetzt werden wir eine Figur (Sprite) hinzufügen, die wir animieren können.
 
 Eine Figur (Sprite) zeichnen
 ----------------------------
@@ -76,7 +76,7 @@ dargestellt wird.)
 
 Du musst die Datei am richten Ort speichern.
 Erstelle ein Verzeichnis namens ``images`` und speichere das Bild dort unter
-``alien.png``. (alles kleingeschrieben!)
+``alien.png`` (alles kleingeschrieben!).
 
 Wenn du das erledigt hast, sollte dein Projektverzeichnis so aussehen:
 
