@@ -50,7 +50,7 @@ In der letzten Zeile:
 
     pgzrun.go()
 
-Beispiel
+Beispiel 
 ''''''''
 
 
@@ -69,3 +69,4 @@ Beispiel
 
     pgzrun.go()
 
+Dieser Code kann einfach in eine beliebige IDE kopiert werden.
