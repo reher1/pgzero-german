@@ -197,7 +197,7 @@ Hier eine paar Beispiele:
 | ``if touching Top?``       | ``if bird.colliderect(pipe_top)``          |
 +----------------------------+--------------------------------------------+
 | ``When Flag clicked``...   | Code in die Funktion ``update()``          |
-| ``forever``                | schreiben.                                  |
+| ``forever``                | schreiben.                                 |
 +----------------------------+--------------------------------------------+
 | ``When [any] key pressed`` | ``def on_key_down():``                     |
 +----------------------------+--------------------------------------------+
