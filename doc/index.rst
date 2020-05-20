@@ -26,7 +26,7 @@ Erste Schritte
 .. learn-programming
 .. flappy-bird
 
-Hilfe 
+Benutzerhandbuch & Hilfe (auf Englisch)
 ---------
 
 .. toctree::
@@ -42,37 +42,8 @@ Benutzerhandbuch
     :maxdepth: 2
 
     installation
-    repl
-    ide-mode
-    other-libs
-    changelog
 
 
-Stickers von |Sticker Mule|
---------------------------
-
-.. |Sticker Mule| image:: _static/sticker-mule.svg
-    :alt: Sticker Mule
-    :height: 40
-    :target: https://www.stickermule.com/supports/opensource
-
-`Sticker Mule`_ stellt Pygame Zero Laptop-Sticker für Lernende zur
-Verfügung.
-
-.. _`Sticker Mule`: https://www.stickermule.com/supports/opensource
-
-.. toctree::
-    :maxdepth: 3
-
-    stickers
 
 
-Ihr wollt Pygame Zero unterstützen? 
----------------------
 
-.. toctree::
-    :maxdepth: 2
-
-    roadmap
-    principles
-    contributing
