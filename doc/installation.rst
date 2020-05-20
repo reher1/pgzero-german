@@ -76,6 +76,10 @@ Beispiel
 
 Dieser Code kann einfach in eine beliebige IDE kopiert werden.
 
+Beliebte IDEs für Anfänger sind (neben der Standard-IDE **IDLE**) **Mu** und **Thonny**:
+
+
+
 Beispiel in Thonny
 ''''''''''''''''''
 
