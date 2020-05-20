@@ -12,6 +12,13 @@ Es ist für die Programmierausbildung gedacht, damit Lehrer/innen in die
 Programmierung einführen können, ohne die Pygame API erklären zu müssen
 oder zum Beispiele eine Event-Schleife programmieren zu müssen.
 
+Pygame Zero installieren
+----------
+
+.. toctree::
+    :maxdepth: 2
+
+    installation
 
 Erste Schritte
 -------
@@ -35,13 +42,7 @@ Benutzerhandbuch & Hilfe (auf Englisch)
     hooks
     builtins
 
-Pygame Zero installieren
-----------
 
-.. toctree::
-    :maxdepth: 2
-
-    installation
 
 
 
