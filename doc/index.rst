@@ -7,7 +7,7 @@ Willkommen bei Pygame Zero
 ==========================
 
 Pygame Zero dient dem kinderleichten Einstieg in die Spieleprogrammierung in Python 3.
-Es basiert auf Pygame und bietet eine Schnittstelle zur noch einfacheren Programmierung von Spielen für Schülerinnen und Schüler sowie alle Interessierte. 
+Es basiert auf Pygame und bietet eine Schnittstelle zur noch einfacheren Programmierung von Spielen für Schülerinnen und Schüler sowie alle Interessierte.
 
 
 Pygame Zero installieren

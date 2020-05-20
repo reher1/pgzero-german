@@ -5,12 +5,12 @@ Desktop
 ----------------
 
 Die Installation von **Python 3** ist Vorraussetzung für die Installation von Pygame Zero.
-Bei **Linux** oder **Raspberry Pi** ist dies bereits vorinstalliert. Für andere Betriebssysteme 
+Bei **Linux** oder **Raspberry Pi** ist dies bereits vorinstalliert. Für andere Betriebssysteme
 kann Python 3 unter `<https://www.python.org/>` heruntergeladen werden.
 
-Generell empfiehlt sich die Installation mithilfe von Pythons Paketverwaltungsprogramm **pip**. 
+Generell empfiehlt sich die Installation mithilfe von Pythons Paketverwaltungsprogramm **pip**.
 
-Windows and Mac
+Windows und Mac
 '''''''''''''''
 ::
 
@@ -29,7 +29,7 @@ Bei der Fehlermedlung ``sudo: pip: command not found`` kann folgender Befehl hil
 
     sudo pip3 install pgzero
 
-Beispiel: Installation in Thonny 
+Beispiel: Installation in Thonny
 ''''''''''''''''''''''''''''''''
 
 Einige IDEs (gerade für Anfänger) bieten bereits einfache grafische Oberflächen zur Installation von neuen Paketen (s. Thonny unten).
@@ -57,7 +57,9 @@ In der letzten Zeile:
 
     pgzrun.go()
 
-Beispiel 
+Hinweis: In Thonny kann mittels des Pygame Zero Modus auf diese beiden Zeile verzichtet werden. Um diesen Modus zu aktivieren,
+muss im Menü > Ausführen > Pygame Zero Modus aktiviert werden.
+Beispiel
 ''''''''
 
 
@@ -82,10 +84,9 @@ Beliebte IDEs für Anfänger sind (neben der Standard-IDE **IDLE**) **Mu** und *
 
 * **Mu**: `<https://codewith.mu/>`
 
-* **Thonny**: `<https://thonny.org/>` 
+* **Thonny**: `<https://thonny.org/>`
 
 Beispiel in Thonny
 ''''''''''''''''''
 
 .. image:: _static/thonny_pgzero_example.jpg
-
