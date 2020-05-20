@@ -41,6 +41,7 @@ Benutzerhandbuch & Hilfe (auf Englisch)
 
     hooks
     builtins
+    changelog
 
 
 
