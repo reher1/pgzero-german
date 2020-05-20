@@ -6,7 +6,7 @@ Desktop
 
 Die Installation von **Python 3** ist Vorraussetzung für die Installation von Pygame Zero.
 Bei **Linux** oder **Raspberry Pi** ist dies bereits vorinstalliert. Für andere Betriebssysteme 
-kann Python 3 unter `python.org <https://www.python.org/>` heruntergeladen werden.
+kann Python 3 unter `<https://www.python.org/>` heruntergeladen werden.
 
 Generell empfiehlt sich die Installation mithilfe von Pythons Paketverwaltungsprogramm **pip**.
 
@@ -78,9 +78,9 @@ Dieser Code kann einfach in eine beliebige IDE kopiert werden.
 
 Beliebte IDEs für Anfänger sind (neben der Standard-IDE **IDLE**) **Mu** und **Thonny**:
 
-* **Mu**: `mu <https://codewith.mu/>`
+* **Mu**: `<https://codewith.mu/>`
 
-* **Thonny**: `thonny <https://thonny.org/>` 
+* **Thonny**: `<https://thonny.org/>` 
 
 Beispiel in Thonny
 ''''''''''''''''''
