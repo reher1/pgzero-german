@@ -201,11 +201,11 @@ Hier eine paar Beispiele:
 +----------------------------+--------------------------------------------+
 | ``When [any] key pressed`` | ``def on_key_down():``                     |
 +----------------------------+--------------------------------------------+
-| ``pick random a to b``     | ``import random`` to load the ``random``   |
-|                            | module, then ``random.randint(a, b)``      |
+| ``pick random a to b``     | ``import random`` um das Modul ``random``  |
+|                            | zu laden, dann ``random.randint(a, b)``    |
 +----------------------------+--------------------------------------------+
-| (0, 0) is the centre of    | (0, 0) is the top-left of the window       |
-| the stage                  |                                            |
+| (0, 0) is the centre of    | (0, 0) ist die linke obere Ecke des        |
+| the stage                  | Fensters.                                  |
 +----------------------------+--------------------------------------------+
 
 In einigen Fällen ist der Code der Pygame Zero Version sogar deutlich 
