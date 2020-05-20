@@ -9,7 +9,6 @@ Bei **Linux** oder **Raspberry Pi** ist dies bereits vorinstalliert. Für andere
 kann Python 3 unter `<https://www.python.org/>` heruntergeladen werden.
 
 Generell empfiehlt sich die Installation mithilfe von Pythons Paketverwaltungsprogramm **pip**. 
-Einige IDEs (gerade für Anfänger) bieten bereits einfache grafische Oberflächen zur Installation von neuen Paketen (s. Thonny unten).
 
 Windows and Mac
 '''''''''''''''
@@ -32,6 +31,8 @@ Bei der Fehlermedlung ``sudo: pip: command not found`` kann folgender Befehl hil
 
 Beispiel: Installation in Thonny 
 ''''''''''''''''''''''''''''''''
+
+Einige IDEs (gerade für Anfänger) bieten bereits einfache grafische Oberflächen zur Installation von neuen Paketen (s. Thonny unten).
 
 .. image:: _static/thonny_pgzero_install.jpg
 
