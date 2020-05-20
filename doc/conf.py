@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Pygame Zero'
-copyright = '2015, Daniel Pope'
+copyright = '2015, Daniel Pope, Deutsche Uebersetzung von Nicolai Poehner'
 author = 'Daniel Pope, Deutsche Uebersetzung von Nicolai Poehner'
 
 # The version info for the project you're documenting, acts as replacement for
