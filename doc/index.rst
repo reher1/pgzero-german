@@ -9,8 +9,8 @@ Willkommen bei Pygame Zero
 Pygame Zero dient dem kinderleichten Einstieg in die Spieleprogrammierung in Python 3, basierend auf Pygame. 
 
 Es ist für die Programmierausbildung gedacht, damit Lehrer/innen in die
-Programmierung einführen können, ohne die Pygame API erklären zu müssen,
-oder eine Event-Schleife programmieren zu müssen.
+Programmierung einführen können, ohne die Pygame API erklären zu müssen
+oder zum Beispiele eine Event-Schleife programmieren zu müssen.
 
 
 Erste Schritte
