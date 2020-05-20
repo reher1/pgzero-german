@@ -59,6 +59,7 @@ In der letzten Zeile:
 
 Hinweis: In Thonny kann mittels des Pygame Zero Modus auf diese beiden Zeile verzichtet werden. Um diesen Modus zu aktivieren,
 muss im Menü > Ausführen > Pygame Zero Modus aktiviert werden.
+
 Beispiel
 ''''''''
 
