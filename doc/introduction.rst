@@ -112,7 +112,7 @@ Die Funktion ``alien.draw()`` zeichnet das Alien an seiner aktuellen Position au
 Figuren bewegen
 ----------------
 
-Wir wollen das Alien in die rechte obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt::
+Wir wollen das Alien in die linke obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt::
 
     alien.x = 10
     alien.y = 10
