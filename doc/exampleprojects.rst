@@ -4,7 +4,7 @@ Beispielprojekte
 Auto-Runner "Racing"
 --------------------
 
-In diesem Beispielprojekt wird eine Implementierung eines einfachen Auto-Runners___ gezeigt.
+In diesem Beispielprojekt wird eine Implementierung eines einfachen `Auto-Runners`___ gezeigt.
 
 .. image:: _static/racing.JPG
 
