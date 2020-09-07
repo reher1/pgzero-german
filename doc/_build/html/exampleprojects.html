@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Running Pygame Zero in IDLE and other IDEs &#8212; pgzero-german 0.0.2 documentation</title>
+    <title>Beispielprojekte &#8212; pgzero-german 0.0.2 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -16,6 +16,8 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Event Hooks" href="hooks.html" />
+    <link rel="prev" title="Von Scratch zu Pygame Zero" href="from-scratch.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -32,46 +34,8 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="running-pygame-zero-in-idle-and-other-ides">
-<h1>Running Pygame Zero in IDLE and other IDEs<a class="headerlink" href="#running-pygame-zero-in-idle-and-other-ides" title="Permalink to this headline">¶</a></h1>
-<div class="versionadded">
-<p><span class="versionmodified">New in version 1.2.</span></p>
-</div>
-<p>Pygame Zero is usually run using a command such as:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pgzrun</span> <span class="n">my_program</span><span class="o">.</span><span class="n">py</span>
-</pre></div>
-</div>
-<p>Certain programs, such as integrated development environments like IDLE and
-Edublocks, will only run <code class="docutils literal notranslate"><span class="pre">python</span></code>, not <code class="docutils literal notranslate"><span class="pre">pgzrun</span></code>.</p>
-<p>Pygame Zero includes a way of writing a full Python program that can be run
-using <code class="docutils literal notranslate"><span class="pre">python</span></code>. To do it, put</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pgzrun</span>
-</pre></div>
-</div>
-<p>as the very first line of the Pygame Zero program, and put</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>as the very last line.</p>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<p>Here is a Pygame Zero program that draws a circle. You can run this by pasting
-it into IDLE:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pgzrun</span>
-
-
-<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
-<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">600</span>
-
-<span class="k">def</span> <span class="nf">draw</span><span class="p">():</span>
-    <span class="n">screen</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-    <span class="n">screen</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">((</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">),</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">)</span>
-
-
-<span class="n">pgzrun</span><span class="o">.</span><span class="n">go</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
+  <div class="section" id="beispielprojekte">
+<h1>Beispielprojekte<a class="headerlink" href="#beispielprojekte" title="Permalink to this headline">¶</a></h1>
 </div>
 
 
@@ -94,10 +58,10 @@ it into IDLE:</p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Pygame Zero installieren</a></li>
 </ul>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Einführung zu Pygame Zero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="from-scratch.html">Von Scratch zu Pygame Zero</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exampleprojects.html">Beispielprojekte</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Beispielprojekte</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="hooks.html">Event Hooks</a></li>
@@ -109,6 +73,8 @@ it into IDLE:</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="from-scratch.html" title="previous chapter">Von Scratch zu Pygame Zero</a></li>
+      <li>Next: <a href="hooks.html" title="next chapter">Event Hooks</a></li>
   </ul></li>
 </ul>
 </div>
@@ -144,7 +110,7 @@ it into IDLE:</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/ide-mode.rst.txt"
+      <a href="_sources/exampleprojects.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

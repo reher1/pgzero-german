@@ -22,10 +22,11 @@ Erste Schritte
 -------
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
 
     introduction
     from-scratch
+    exampleprojects
 
 .. This one is not yet complete
 .. learn-programming
