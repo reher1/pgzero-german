@@ -43,11 +43,9 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pgzrun</span> <span class="n">intro</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>sicher, dass das Programm ausgeführt wird und ein leeres Fenster erzeugt.</p>
-<p>Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des
-Fensters klickst oder durch drücken von
-<code class="docutils literal notranslate"><span class="pre">Ctrl-Q</span></code> (<code class="docutils literal notranslate"><span class="pre">⌘-Q</span></code> beim Mac). Wenn das Spiel nicht mehr reagiert, kann es sein, dass du es durch drücken von <code class="docutils literal notranslate"><span class="pre">Ctrl-C</span></code> im
-Terminal-Fenster beenden musst.</p>
+<p>sicher, dass das Programm ausgeführt wird und ein leeres Fenster erzeugt. Alternativ kannst du das auch in deiner IDE testen.</p>
+<p>Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des Fensters oder die Taste
+<code class="docutils literal notranslate"><span class="pre">Ctrl-Q</span></code> (<code class="docutils literal notranslate"><span class="pre">⌘-Q</span></code> beim Mac) drückst. Wenn das Spiel nicht mehr reagiert, kann es sein, dass du es durch Drücken von <code class="docutils literal notranslate"><span class="pre">Ctrl-C</span></code> im Terminal-Fenster beenden musst.</p>
 </div>
 <div class="section" id="einen-hintergrund-zeichnen">
 <h2>Einen Hintergrund zeichnen<a class="headerlink" href="#einen-hintergrund-zeichnen" title="Permalink to this headline">¶</a></h2>
@@ -67,7 +65,7 @@ Füge folgenden Code in <code class="docutils literal notranslate"><span class="
 </td></tr></table></div>
 <p>Führe <code class="docutils literal notranslate"><span class="pre">pgzrun</span> <span class="pre">intro.py</span></code> erneut aus. Der Bildschirm sollte jetzt ein rotes
 Quadrat zeigen!</p>
-<p>Was tut dieser Code?</p>
+<p>Was tut dieser Code genau?</p>
 <p><code class="docutils literal notranslate"><span class="pre">WIDTH</span></code> und <code class="docutils literal notranslate"><span class="pre">HEIGHT</span></code> bestimmen die Breite und Höhe deines Fensters. Der Code
 setzt die Größe des Fensters auf 300 Pixel für beide Dimensionen.</p>
 <p><code class="docutils literal notranslate"><span class="pre">screen</span></code> ist ein vorgegebenes Objekt, dass das angezeigte Fenster
@@ -131,7 +129,7 @@ entsprechend der Höhe des Alien-Sprites setzen.</p>
 </div>
 <div class="section" id="figuren-bewegen">
 <h2>Figuren bewegen<a class="headerlink" href="#figuren-bewegen" title="Permalink to this headline">¶</a></h2>
-<p>Wir wollen das Alien in die rechte obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt:</p>
+<p>Wir wollen das Alien in die linke obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">alien</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">alien</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
 </pre></div>
@@ -200,7 +198,7 @@ Das Alien wechselt nicht mehr zurück zu seinem alten Bild. Das wollen wir als n
 <div class="section" id="die-uhr-benutzen">
 <h2>Die Uhr benutzen<a class="headerlink" href="#die-uhr-benutzen" title="Permalink to this headline">¶</a></h2>
 <p>Pygame Zero hat eine eingebaute Klasse <a class="reference internal" href="builtins.html#Clock" title="Clock"><code class="xref py py-class docutils literal notranslate"><span class="pre">Clock</span></code></a>, die dafür sorgt, dass Funktionen später ausgeführt werden.</p>
-<p>Zuerst wollen wir ein kurzes <code class="docutils literal notranslate"><span class="pre">Refactoring</span></code> (d.h. wir reorganisieren unseren Code, um ihn lesbarer zu machen). Wir können Funktionen schreiben, um den Alien verletzt bzw. normal zu setzen:</p>
+<p>Zuerst wollen wir ein kurzes <code class="docutils literal notranslate"><span class="pre">Refactoring</span></code> (d.h. wir reorganisieren unseren Code, um ihn lesbarer zu machen). Wir können Funktionen schreiben, um das Alien verletzt bzw. normal zu setzen:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -238,9 +236,9 @@ Das Alien wechselt nicht mehr zurück zu seinem alten Bild. Das wollen wir als n
 </div>
 <div class="section" id="zusammenfassung">
 <h2>Zusammenfassung<a class="headerlink" href="#zusammenfassung" title="Permalink to this headline">¶</a></h2>
-<p>Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Maus- und Tastatureingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder?</p>
+<p>Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Tastatur- und Mauseingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder?</p>
 <p>Ihr wollt euer Spiel noch weiterentwickeln?</p>
-<p>Es gibt noch eine Vielzahl an weiteren Funktionen in Pygame Zero, die sehr einfach zu benutzen sind. Lies dazu <a class="reference internal" href="builtins.html"><span class="doc">built in objects</span></a>, um den Rest von Pygame Zero zu entdecken.</p>
+<p>Es gibt noch eine Vielzahl an weiteren Funktionen in Pygame Zero, die sehr einfach zu benutzen sind. Lies dazu <a class="reference internal" href="builtins.html"><span class="doc">built in objects</span></a> (Achtung, auf Englisch!), um den Rest von Pygame Zero zu entdecken.</p>
 </div>
 </div>
 
@@ -278,6 +276,7 @@ Das Alien wechselt nicht mehr zurück zu seinem alten Bild. Das wollen wir als n
 </li>
 <li class="toctree-l1"><a class="reference internal" href="from-scratch.html">Von Scratch zu Pygame Zero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exampleprojects.html">Beispielprojekte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exampleprojects.html#racing">Racing</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="hooks.html">Event Hooks</a></li>

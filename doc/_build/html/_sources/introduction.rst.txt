@@ -13,12 +13,10 @@ Stelle durch den Befehl ::
 
     pgzrun intro.py
 
-sicher, dass das Programm ausgeführt wird und ein leeres Fenster erzeugt.
+sicher, dass das Programm ausgeführt wird und ein leeres Fenster erzeugt. Alternativ kannst du das auch in deiner IDE testen.
 
-Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des
-Fensters klickst oder durch drücken von
-``Ctrl-Q`` (``⌘-Q`` beim Mac). Wenn das Spiel nicht mehr reagiert, kann es sein, dass du es durch drücken von ``Ctrl-C`` im
-Terminal-Fenster beenden musst.
+Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des Fensters oder die Taste
+``Ctrl-Q`` (``⌘-Q`` beim Mac) drückst. Wenn das Spiel nicht mehr reagiert, kann es sein, dass du es durch Drücken von ``Ctrl-C`` im Terminal-Fenster beenden musst.
 
 
 Einen Hintergrund zeichnen
@@ -37,7 +35,7 @@ Füge folgenden Code in ``intro.py`` hinzu::
 Führe ``pgzrun intro.py`` erneut aus. Der Bildschirm sollte jetzt ein rotes
 Quadrat zeigen!
 
-Was tut dieser Code?
+Was tut dieser Code genau?
 
 ``WIDTH`` und ``HEIGHT`` bestimmen die Breite und Höhe deines Fensters. Der Code
 setzt die Größe des Fensters auf 300 Pixel für beide Dimensionen.
@@ -114,7 +112,7 @@ Die Funktion ``alien.draw()`` zeichnet das Alien an seiner aktuellen Position au
 Figuren bewegen
 ----------------
 
-Wir wollen das Alien in die rechte obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt::
+Wir wollen das Alien in die linke obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt::
 
     alien.x = 10
     alien.y = 10
@@ -189,7 +187,7 @@ Die Uhr benutzen
 
 Pygame Zero hat eine eingebaute Klasse :class:`Clock`, die dafür sorgt, dass Funktionen später ausgeführt werden.
 
-Zuerst wollen wir ein kurzes ``Refactoring`` (d.h. wir reorganisieren unseren Code, um ihn lesbarer zu machen). Wir können Funktionen schreiben, um den Alien verletzt bzw. normal zu setzen::
+Zuerst wollen wir ein kurzes ``Refactoring`` (d.h. wir reorganisieren unseren Code, um ihn lesbarer zu machen). Wir können Funktionen schreiben, um das Alien verletzt bzw. normal zu setzen::
 
     def on_mouse_down(pos):
         if alien.collidepoint(pos):
@@ -219,8 +217,8 @@ Probier es aus!
 Zusammenfassung
 -------
 
-Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Maus- und Tastatureingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder? 
+Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Tastatur- und Mauseingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder? 
 
 Ihr wollt euer Spiel noch weiterentwickeln?
 
-Es gibt noch eine Vielzahl an weiteren Funktionen in Pygame Zero, die sehr einfach zu benutzen sind. Lies dazu :doc:`built in objects <builtins>`, um den Rest von Pygame Zero zu entdecken.
+Es gibt noch eine Vielzahl an weiteren Funktionen in Pygame Zero, die sehr einfach zu benutzen sind. Lies dazu :doc:`built in objects <builtins>` (Achtung, auf Englisch!), um den Rest von Pygame Zero zu entdecken.
