@@ -65,7 +65,7 @@ Allerdings ist sie für einen dunklen Hintergrund gezeichnet worden. Es kann als
 sein, dass du den Helm des Aliens erst siehst, wenn er im Spiel
 dargestellt wird.)
 
-.. Tipp::
+.. tip::
 
     Du findest viele kostenlose Sprites, einschließlich diesem auf `kenney.nl
     <https://kenney.nl/assets?q=2d>`_.
@@ -217,7 +217,7 @@ Probier es aus!
 Zusammenfassung
 -------
 
-Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Tastatur- und Mauseingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder? 
+Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Tastatur- und Mauseingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder?
 
 Ihr wollt euer Spiel noch weiterentwickeln?
 

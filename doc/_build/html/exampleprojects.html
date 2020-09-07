@@ -41,6 +41,56 @@
 <p>In diesem Beispielprojekt wird eine Implementierung eines einfachen <a class="reference external" href="https://de.wikipedia.org/wiki/Auto-Runner">Auto-Runners</a> gezeigt.</p>
 <img alt="_images/racing.JPG" src="_images/racing.JPG" />
 <p>Die <a class="reference external" href="https://github.com/nicolaipoehner/pgzero_exampleprojects/blob/master/Racing.py">Pygame Zero Version</a> kann hier heruntergeladen werden.</p>
+<div class="section" id="die-buhne">
+<h3>Die Bühne<a class="headerlink" href="#die-buhne" title="Permalink to this headline">¶</a></h3>
+<p>Zu Beginn wollen wir eine Fahrbahn als Bühne für das Spiel entwickeln.
+Dazu setzen wir zuerst den Hintergrund:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># width and height of the world</span>
+<span class="n">WIDTH</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="n">HEIGHT</span> <span class="o">=</span> <span class="mi">768</span>
+
+<span class="k">def</span> <span class="nf">draw</span><span class="p">():</span>
+    <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="s1">&#39;road&#39;</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p>Zusätzlich wollen wir eine Leitplanke auf der linken und rechten Seite realisieren. Dazu realisieren wir
+eine eigene Methode, die das erledigt:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># initialises the barrier of the race track</span>
+<span class="k">def</span> <span class="nf">setupBarriers</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+      <span class="n">barriers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Actor</span><span class="p">(</span><span class="s1">&#39;barrier&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mi">64</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mi">128</span><span class="p">))))</span>
+      <span class="n">barriers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Actor</span><span class="p">(</span><span class="s1">&#39;barrier&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">730</span><span class="p">,</span> <span class="mi">64</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mi">128</span><span class="p">))))</span>
+</pre></div>
+</td></tr></table></div>
+<p>Diese Methode setzt auf beiden Seiten insgesamt sieben Stücke der Leitplanke. Die Methode muss in der Methode <code class="docutils literal notranslate"><span class="pre">draw()</span></code> aufgerufen werden.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Du findest viele kostenlose Sprites, einschließlich diesem auf <a class="reference external" href="https://kenney.nl/assets?q=2d">kenney.nl</a>.
+Die Bilder für dieses Spiel stammen aus <a class="reference external" href="https://kenney.nl/assets/racing-pack">Racing pack</a>.</p>
+</div>
+</div>
+<div class="section" id="ein-auto-sprite-erstellen-und-steuern">
+<h3>Ein Auto (Sprite) erstellen und steuern<a class="headerlink" href="#ein-auto-sprite-erstellen-und-steuern" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="kegel-im-weg">
+<h3>Kegel im Weg<a class="headerlink" href="#kegel-im-weg" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="weitere-hindernisse-olpfutzen-und-steine">
+<h3>Weitere Hindernisse: Ölpfützen und Steine<a class="headerlink" href="#weitere-hindernisse-olpfutzen-und-steine" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="countdown-hinzufugen">
+<h3>Countdown hinzufügen<a class="headerlink" href="#countdown-hinzufugen" title="Permalink to this headline">¶</a></h3>
+<p>Mehr gefällig? Weitere Beispiele finden sich auf der englischen Seite von <a class="reference external" href="https://github.com/nicolaipoehner/pgzero/blob/master/doc/examples.rst">Pygame Zero</a>.</p>
+</div>
 </div>
 </div>
 
@@ -68,7 +118,14 @@
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Einführung zu Pygame Zero</a></li>
 <li class="toctree-l1"><a class="reference internal" href="from-scratch.html">Von Scratch zu Pygame Zero</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Beispielprojekte</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#auto-runner-racing">Auto-Runner “Racing”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#auto-runner-racing">Auto-Runner “Racing”</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#die-buhne">Die Bühne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ein-auto-sprite-erstellen-und-steuern">Ein Auto (Sprite) erstellen und steuern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#kegel-im-weg">Kegel im Weg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#weitere-hindernisse-olpfutzen-und-steine">Weitere Hindernisse: Ölpfützen und Steine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#countdown-hinzufugen">Countdown hinzufügen</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
