@@ -69,8 +69,8 @@ dargestellt wird.)
 
     Du findest viele kostenlose Sprites, einschließlich diesem auf `kenney.nl
     <https://kenney.nl/assets?q=2d>`_.
-    Die Bilder für dieses Spiel stammen aus `Racing pack
-    <https://kenney.nl/assets/racing-pack>`_.
+    Das Alien-Bild stammt aus `Platformer Art Deluxe pack
+    <https://kenney.nl/assets/platformer-art-deluxe>`_.
 
 Du musst die Datei am richten Ort speichern.
 Erstelle ein Verzeichnis namens ``images`` und speichere das Bild dort unter
