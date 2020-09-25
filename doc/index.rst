@@ -11,7 +11,7 @@ Es basiert auf Pygame und bietet eine Schnittstelle zur noch einfacheren Program
 
 
 Pygame Zero installieren
-----------
+------------------------
 
 .. toctree::
     :maxdepth: 2
@@ -19,7 +19,7 @@ Pygame Zero installieren
     installation
 
 Erste Schritte
--------
+--------------
 
 .. toctree::
     :maxdepth: 3
@@ -33,7 +33,7 @@ Erste Schritte
 .. flappy-bird
 
 Benutzerhandbuch & Hilfe (auf Englisch)
----------
+---------------------------------------
 
 .. toctree::
     :maxdepth: 3

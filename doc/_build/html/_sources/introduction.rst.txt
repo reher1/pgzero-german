@@ -20,7 +20,7 @@ Du kannst das Spiel beenden, indem du auf die Schließen-Schaltfläche des Fenst
 
 
 Einen Hintergrund zeichnen
------------------------
+--------------------------
 
 Als nächstes wollen wir die Funktion :func:`draw` hinzufügen und die
 Fenstergröße setzen. Pygame Zero ruft diese Funktion immer dann auf, wenn der Bildschirm neu gezeichnet werden muss.
@@ -110,7 +110,7 @@ entsprechend der Höhe des Alien-Sprites setzen.
 Die Funktion ``alien.draw()`` zeichnet das Alien an seiner aktuellen Position auf den Bildschirm.
 
 Figuren bewegen
-----------------
+---------------
 
 Wir wollen das Alien in die linke obere Ecke des Bildschirms setzen; dazu ändern wir den Code wie folgt::
 
@@ -135,7 +135,7 @@ DIe ``draw()`` Funktion zeichnet das Alien an seiner aktuellen Position. Die Fun
 
 
 Tastatur- und Mauseingaben verarbeiten
----------------
+--------------------------------------
 Nun wollen wir auf Tastatur- und Mauseingaben reagieren. Dazu müssen wir die Funktion :func:`on_mouse_down` implementieren. Füge folgenden Code hinzu::
 
     def on_mouse_down(pos):
@@ -147,7 +147,7 @@ Nun wollen wir auf Tastatur- und Mauseingaben reagieren. Dazu müssen wir die Fu
 Starte das Spiel und versuche auf das Alien (mit der linken Maustaste) zu klicken.
 
 Musik und Bilder hinzufügen
------------------
+---------------------------
 
 Wenn wir auf das Alien klicken, soll es verletzt sein. Dazu wollen wir das Bild des Alien-Sprites ändern. Speichere die folgenden Dateien:
 
@@ -183,7 +183,7 @@ Das Alien wechselt nicht mehr zurück zu seinem alten Bild. Das wollen wir als n
 
 
 Die Uhr benutzen
------
+----------------
 
 Pygame Zero hat eine eingebaute Klasse :class:`Clock`, die dafür sorgt, dass Funktionen später ausgeführt werden.
 
@@ -215,7 +215,7 @@ Probier es aus!
 
 
 Zusammenfassung
--------
+---------------
 
 Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Tastatur- und Mauseingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder?
 

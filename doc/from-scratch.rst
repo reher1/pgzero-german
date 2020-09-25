@@ -1,5 +1,5 @@
 Von Scratch zu Pygame Zero
-======================
+==========================
 
 In diesem Tutorial wird eine Implementierung des Spiels Flappy Bird in Scratch und Pygame Zero gegenübergestellt. So soll gezeigt werden, dass die Implmentierung in Pygame Zero sehr ähnlich zu der in Scratch ist und der Übergang von Scratch zu Pygame Zero daher sehr einfach ist.
 
@@ -37,7 +37,7 @@ Danach zeichnen wir diese in unserem Fenster::
 
 
 Bewegung der Rohre
--------------
+------------------
 
 Die Rohre bewegen sich in konstanter Geschwindigkeit zufällig nach oben und unten.
 Wenn sie links aus dem Fenster verschwinden, erscheinen sie rechts neu.
@@ -52,10 +52,10 @@ Diese erledigen folgende Aktionen:
 
 * Die Bedingung ``x position < -240`` ist erfüllt, wenn das Rohr das Fenster links verlassen hat.
   Dann werden sie rechts neu erzeugt.
-* Die Variable ``pipe_height`` koordiniert die beiden Rohe, die immer gleich weit 
+* Die Variable ``pipe_height`` koordiniert die beiden Rohe, die immer gleich weit
   voneinander entfernt sein sollen. Daher kann nicht für beide Rohre eine zufällige Höhe bestimmt werden.
-* Der Befehl ``set y position to pipe height +/- 230`` sorgt dafür, dass immer der gleiche Abstand zwischen 
-  den Rohren gegeben ist. 
+* Der Befehl ``set y position to pipe height +/- 230`` sorgt dafür, dass immer der gleiche Abstand zwischen
+  den Rohren gegeben ist.
 
 Dieser Code kann in Pygame Zero deutlich einfacher realisiert werden::
 
@@ -77,19 +77,19 @@ Dieser Code kann in Pygame Zero deutlich einfacher realisiert werden::
        if pipe_top.right < 0:
            reset_pipes()
 
-Ein Vorteil von Pygame Zero ist die Verwendung von Konstanten (z.B. GAP (in Großbuchstaben)). Wenn man 
+Ein Vorteil von Pygame Zero ist die Verwendung von Konstanten (z.B. GAP (in Großbuchstaben)). Wenn man
 den Abstand zwischen den Rohren verringern möchte (z.B. um das Spiel schwieriger zu machen),
 muss der Code lediglich an einer Stelle geändert werden.
 
 Der größte Unterschied der beiden Versionen ist die (fehlende) Benutzung einer Endlosschleife.
-Dies geschieht in Pygame Zero automatisch mithilfe der Funktion ``update()``, 
+Dies geschieht in Pygame Zero automatisch mithilfe der Funktion ``update()``,
 die regelmäßig automatisch aufgerufen wird::
 
    def update():
       update_pipes()
 
 Der Vogel
---------
+---------
 
 Ähnlich wie bei der Bewegung der Rohre funktioniert auch die Bewegung des Vogels.
 
@@ -116,13 +116,13 @@ Zur Realisierung der Schwerkraft benutzen wir folgende einfache Begriffe:
 
 Die Variable ``bird.vy`` stellt die Geschwindigkeit des Vogels in ``y`` Richtung dar.
 Diese Variable erstellen wir neu. Die Schwerkraft ist eine konstante Bewegung nach unten.
-Die Beschleunigung wird durch die Schwerkraft verstärkt: ``GRAVITY`` wird zu ``bird.vy`` addiert. 
+Die Beschleunigung wird durch die Schwerkraft verstärkt: ``GRAVITY`` wird zu ``bird.vy`` addiert.
 Die Geschwindigkeit wird durch die Positionveränderung ausgedrückt: ``bird.vy`` wird zu ``bird.y`` addiert.
 
-Gleichzeit bewegt sich der Vogel nicht in ``x`` Richtung. Die Bewegung des Spiels wird durch die Bewegung 
+Gleichzeit bewegt sich der Vogel nicht in ``x`` Richtung. Die Bewegung des Spiels wird durch die Bewegung
 der Rohre simuliert.
 
-Als nächstes wollen wir die Flügelbewegung des Vogels implementieren. Dazu ändern wir sein Bild. 
+Als nächstes wollen wir die Flügelbewegung des Vogels implementieren. Dazu ändern wir sein Bild.
 Bewegt sich der Vogel nach oben, wird das Bild ``bird2`` angezeigt. Bei einer Bewegung nach unten das Bild ``bird1``::
 
        if not bird.dead:
@@ -130,7 +130,7 @@ Bewegt sich der Vogel nach oben, wird das Bild ``bird2`` angezeigt. Bei einer Be
                bird.image = 'bird2'
            else:
                bird.image = 'bird1'
-              
+
 Hinweis: Der Wert -3 wurde durch Ausprobieren gewählt.
 
 Nun soll überprüft werden, ob der Vogel eines der Rohre berührt::
@@ -138,10 +138,10 @@ Nun soll überprüft werden, ob der Vogel eines der Rohre berührt::
        if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom):
            bird.dead = True
            bird.image = 'birddead'
-           
+
 Ist dies der Fall, soll die Variable ``dead`` auf ``True`` gesetzt werden (d.h. der Vogel ist tot und das Spiel somit beendet) und das Bild geändert werden.
 
-Am Ende soll noch überprüft werden, ob der Vogel auf den Boden gefallen ist. Falls ja, soll er wieder 
+Am Ende soll noch überprüft werden, ob der Vogel auf den Boden gefallen ist. Falls ja, soll er wieder
 in die Startposition gebracht werden. Zudem sollen die Rohre neu gesetzt werden::
 
        if not 0 < bird.y < 720:
@@ -164,7 +164,7 @@ Um jetzt auf Tastatur- bzw. Mauseingaben zu reagieren, definieren wir noch die F
        if not bird.dead:
            bird.vy = FLAP_VELOCITY
 
-Bei Tastendruck soll ein lebender Vogel etwas nach oben fliegen (bevor er aufgrund der Schwerkraft wieder 
+Bei Tastendruck soll ein lebender Vogel etwas nach oben fliegen (bevor er aufgrund der Schwerkraft wieder
 nach unten fällt). Dazu wird die Variable ``vy`` auf einen negativen Wert gesetzt.
 
 Hinweis: Durch Veränderung der Variable ``vy`` fliegt der Vogel etwas höher bzw. weniger hoch nach oben.
@@ -175,7 +175,7 @@ Im Allgemeinen sollten beim Vergleich der beiden Implementierungen in Scratch un
 .. image:: _static/scratch/flappybird-bird-space.png
 
 Zusammenfassung
--------
+---------------
 
 Viele Schnippsel des Codes aus der Scratch Version lassen sich einfach in Pygame Zero überführen.
 
@@ -208,5 +208,5 @@ Hier eine paar Beispiele:
 | the stage                  | Fensters.                                  |
 +----------------------------+--------------------------------------------+
 
-In einigen Fällen ist der Code der Pygame Zero Version sogar deutlich 
+In einigen Fällen ist der Code der Pygame Zero Version sogar deutlich
 einfach zu verstehen, als der der Scratch Version.
