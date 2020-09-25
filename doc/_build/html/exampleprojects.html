@@ -152,7 +152,7 @@ Nun können wir das Auto auf der Fahrbahn steuern.</p>
 <h3>Ein erstes Hindernis: Kegel<a class="headerlink" href="#ein-erstes-hindernis-kegel" title="Permalink to this headline">¶</a></h3>
 <p>Damit das Spiel etwas spannender wird, sollen dem Auto nun Hindernisse entgegen kommen, auf die unterschiedlich reagiert werden muss.
 Wir beginnen dabei mit einem Kegel, der vom Auto entweder nach links (wenn das Auto von rechts kommt) oder nach rechts (wenn das Auto von links kommt) verschoben werden soll.</p>
-<img alt="_images/cone.PNG" src="_images/cone.PNG" />
+<img alt="_images/cone.png" src="_images/cone.png" />
 <p>Ähnlich wie der Leitplanke erstellen wir zuerst eine Liste der Hindernisse (hier: <code class="docutils literal notranslate"><span class="pre">cones</span></code>), die wir zur Speicherung der Kegel benötigen. Diese hilft uns später,
 alle Kegel zu aktualisieren (in der Methode <code class="docutils literal notranslate"><span class="pre">draw</span></code>):</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -217,9 +217,9 @@ wird der Kegel nach rechts bzw. links verschoben. Somit ist das erste Hindernis,
 <div class="section" id="weitere-hindernisse-olpfutzen-steine-und-pfeile">
 <h3>Weitere Hindernisse: Ölpfützen, Steine und Pfeile<a class="headerlink" href="#weitere-hindernisse-olpfutzen-steine-und-pfeile" title="Permalink to this headline">¶</a></h3>
 <p>Weitere Hindernisse, die dem Auto entgegen kommen und denen es ausweichen (bzw. angemessen reagieren) muss, können beispielsweise Ölpfützen, Steine und Pfeile sein.</p>
-<img alt="_images/oil.PNG" src="_images/oil.PNG" />
-<img alt="_images/rock.PNG" src="_images/rock.PNG" />
-<img alt="_images/arrow.PNG" src="_images/arrow.PNG" />
+<img alt="_images/oil.png" src="_images/oil.png" />
+<img alt="_images/rock.png" src="_images/rock.png" />
+<img alt="_images/arrow.png" src="_images/arrow.png" />
 <p>Der grundlegende Aufbau zur Programmierung von Hindernissen wurde bereits im vorigen Abschnitt bei den Kegeln gezeigt. Wir definieren für alle Hindernisse
 eine eigene Methode <code class="docutils literal notranslate"><span class="pre">createAndUpdate&lt;newObstacle&gt;()</span></code>, die das zufällige Erstellen und die Kollisionserkennung verarbeitet. Diese rufen wir in der Methode <code class="docutils literal notranslate"><span class="pre">update()</span></code> auf.
 Zudem müssen wir eine Liste, die wir für neue Hindernisse zur Speicherung der einzelnen Objekte verwenden, implementieren und diese in der Methode <code class="docutils literal notranslate"><span class="pre">draw()</span></code> benutzen.

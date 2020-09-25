@@ -104,7 +104,7 @@ Ein erstes Hindernis: Kegel
 Damit das Spiel etwas spannender wird, sollen dem Auto nun Hindernisse entgegen kommen, auf die unterschiedlich reagiert werden muss.
 Wir beginnen dabei mit einem Kegel, der vom Auto entweder nach links (wenn das Auto von rechts kommt) oder nach rechts (wenn das Auto von links kommt) verschoben werden soll.
 
-.. image:: _static/cone.PNG
+.. image:: _static/cone.png
 
 Ähnlich wie der Leitplanke erstellen wir zuerst eine Liste der Hindernisse (hier: ``cones``), die wir zur Speicherung der Kegel benötigen. Diese hilft uns später,
 alle Kegel zu aktualisieren (in der Methode ``draw``)::
@@ -150,11 +150,11 @@ Weitere Hindernisse: Ölpfützen, Steine und Pfeile
 
 Weitere Hindernisse, die dem Auto entgegen kommen und denen es ausweichen (bzw. angemessen reagieren) muss, können beispielsweise Ölpfützen, Steine und Pfeile sein.
 
-.. image:: _static/oil.PNG
+.. image:: _static/oil.png
 
-.. image:: _static/rock.PNG
+.. image:: _static/rock.png
 
-.. image:: _static/arrow.PNG
+.. image:: _static/arrow.png
 
 Der grundlegende Aufbau zur Programmierung von Hindernissen wurde bereits im vorigen Abschnitt bei den Kegeln gezeigt. Wir definieren für alle Hindernisse
 eine eigene Methode ``createAndUpdate<newObstacle>()``, die das zufällige Erstellen und die Kollisionserkennung verarbeitet. Diese rufen wir in der Methode ``update()`` auf.
