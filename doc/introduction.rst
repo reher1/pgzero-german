@@ -42,7 +42,7 @@ setzt die Größe des Fensters auf 300 Pixel für beide Dimensionen.
 
 ``screen`` ist ein vorgegebenes Objekt, dass das angezeigte Fenster
 repräsentiert. Es hat eine
-:ref:`Reihe an Methoden zum malen von Sprites und Formen <screen>`. Die Methode
+:ref:`Reihe an Methoden zum Malen von Sprites und Formen <screen>`. Die Methode
 ``screen.fill()`` befüllt den Bildschirm einfarbig,
 in der Farbe mit dem Farbtupel ``(rot, grün, blau)``. ``(128, 0, 0)`` wird zu einem
 mittleren Rot-Ton. Ändere die Werte mit Zahlen zwischen 0 und 255 und schaue,
@@ -88,7 +88,7 @@ Wenn du das erledigt hast, sollte dein Projektverzeichnis so aussehen:
 ``images/`` ist das Standardverzeichnis, in dem Pygame Zero Bilder sucht.
 
 In Pygame Zero gibt es ein Klasse namens :class:`Actor`, die benutzt werden kann,
-um Sprites auf dem Bildschrimm zu zeichnen.
+um Sprites auf dem Bildschirm zu zeichnen.
 
 Ändere die Datei ``intro.py`` wie folgt ab::
 
@@ -102,7 +102,7 @@ um Sprites auf dem Bildschrimm zu zeichnen.
         screen.clear()
         alien.draw()
 
-Auf dem Bildschrim sollte jetzt ein Alien erscheinen! Durch die Angabe des Strings ``'alien'``
+Auf dem Bildschirm sollte jetzt ein Alien erscheinen! Durch die Angabe des Strings ``'alien'``
 in der ``Actor`` Klasse, lädt Pygame Zero automatisch das entsprechende Bild
 (inkl. der Attribute wie Position, etc.). So können wir beispielsweise die Höhe des Fensters
 entsprechend der Höhe des Alien-Sprites setzen.
@@ -117,7 +117,7 @@ Wir wollen das Alien in die linke obere Ecke des Bildschirms setzen; dazu änder
     alien.x = 10
     alien.y = 10
 
-Mithilfe der x- und y-Koordinate können wir das Alien an eine beliege Position setzen.
+Mithilfe der x- und y-Koordinate können wir das Alien an eine beliebige Position setzen.
 Hier setzen wir die Figur in die linke obere Ecke.
 Jetzt wollen wir das Alien bewegen; dazu ändern wir den Code wie folgt::
 
@@ -217,7 +217,7 @@ Probier es aus!
 Zusammenfassung
 ---------------
 
-Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Tastatur- und Mauseingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritt mit Pygame Zero! War doch gar nicht so schwierig oder?
+Wir haben jetzt gelernt, wie man Sprites lädt und zeichnet, Musik abspielt, Tastatur- und Mauseingaben verarbeitet und die eingebaute Uhr benutzt. Damit beherrschen wir die ersten Schritte mit Pygame Zero! War doch gar nicht so schwierig, oder?
 
 Ihr wollt euer Spiel noch weiterentwickeln?
 
